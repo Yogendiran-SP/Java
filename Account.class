@@ -1,0 +1,11 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+class Account {
+   Account() {
+   }
+
+   public static void main(String[] var0) {
+      System.out.println(var0.length);
+      System.out.println(var0[0]);
+      System.out.println(var0[1]);
+   }
+}
