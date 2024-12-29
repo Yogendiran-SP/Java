@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Information</h1>
+        <div class="form-group">
+            <label for="studentId">Student ID:</label>
+            <input type="number" id="studentId" placeholder="Enter Student ID">
+        </div>
+        <div class="form-group">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" placeholder="Enter Student Name">
+        </div>
+        <div class="form-group">
+            <label for="qualifyingMarks">Qualifying Exam Marks:</label>
+            <input type="number" id="qualifyingMarks" placeholder="Enter Qualifying Marks">
+        </div>
+        <div class="form-group">
+            <label for="yearOfEngg">Year of Engineering:</label>
+            <input type="number" id="yearOfEngg" placeholder="Enter Year of Engineering">
+        </div>
+        <div class="form-group">
+            <label for="residence">Residential Status:</label>
+            <select id="residence">
+                <option value="H">Hosteller</option>
+                <option value="D">Dayscholar</option>
+            </select>
+        </div>
+        <button onclick="submitDetails()">Submit</button>
+
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        function submitDetails() {
+            const studentId = document.getElementById('studentId').value;
+            const studentName = document.getElementById('studentName').value;
+            const qualifyingMarks = document.getElementById('qualifyingMarks').value;
+            const yearOfEngg = document.getElementById('yearOfEngg').value;
+            const residence = document.getElementById('residence').value;
+
+            if (!studentId || !studentName || !qualifyingMarks || !yearOfEngg || !residence) {
+                alert('Please fill all fields');
+                return;
+            }
+
+            const residenceText = residence === 'H' ? 'Hosteller' : 'Dayscholar';
+
+            const output = `
+                <p><strong>Student Name:</strong> ${studentName}</p>
+                <p><strong>Student ID:</strong> ${studentId}</p>
+                <p><strong>Qualifying Exam Marks:</strong> ${qualifyingMarks}</p>
+                <p><strong>Year of Engineering:</strong> ${yearOfEngg}</p>
+                <p><strong>Residential Status:</strong> ${residenceText}</p>
+            `;
+
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+</body>
+</html>
