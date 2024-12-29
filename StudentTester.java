@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Student {
+class Student {
 
     private int Id, Y;
     private String N;
@@ -30,7 +30,7 @@ public class Student {
     {
         this.N=N;
     }
-    public float getQualifyiingExamMarks()
+    public double getQualifyiingExamMarks()
     {
         return M;
     }
@@ -57,7 +57,7 @@ public class StudentTester
         System.out.println("Enter StudentId: ");
         student.setStudentId(input.nextInt());
         System.out.println("Enter Student Name: ");
-        student.setStudentName(input.nextLine());
+        student.setStudentName(input.next());
         System.out.println("Enter Student Qualifying Marks: ");
         student.setQualifiyingExamMarks(input.nextDouble());
         System.out.println("Enter Student Year of Engineering: ");
@@ -69,7 +69,7 @@ public class StudentTester
         System.out.println("Student Id                   :"+student.getStudentId());
         System.out.println("Student Qualifying Marks     :"+student.getQualifyiingExamMarks());
         System.out.println("Student Year of Engineering  :"+student.getYearofEngg());
-        System.out.print("Student Residential Status :");
+        System.out.print("Student Residential Status   :");
         if(student.getResidence()=='H')
         {
             System.out.println("Hosteller");
@@ -78,6 +78,6 @@ public class StudentTester
         {
             System.out.println("Dayscholar");
         }
-        scanner.close();
+        input.close();
     }
 }
