@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Rectangle {
-    private int l,b,p;
+    private int l,b;
     public  int getinput1() {
         return l;
     }
@@ -15,9 +15,6 @@ public class Rectangle {
     }
     public int getcalculatePerimeter() {
         return 2*(l*b);
-    }
-    public void setcalculatePerimeter() {
-        this.p=2*(l*b);
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
