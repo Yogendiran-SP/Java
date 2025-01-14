@@ -16,7 +16,7 @@ public class AreaOfRectangle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         AreaOfRectangle obj = new AreaOfRectangle();
-        System.out.println("Enter length of the rectangle: ");
+        System.out.println("\nEnter length of the rectangle: ");
         obj.setinput1(scanner.nextInt());
         System.out.println("Enter the breadth of the rectangle: ");
         obj.setinput2(scanner.nextInt());
