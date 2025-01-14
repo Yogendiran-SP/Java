@@ -6,7 +6,7 @@ class Account {
     }
   
     public static void main(String[] args) {
-      Account accnt = new Account();            // object creation
+      Account accnt = new Account();           // object creation
       double value = accnt.getBalance(123456);
       System.out.println("The balance is: " + value);
     }
