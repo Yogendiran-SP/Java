@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Rectangle {
+public class AreaOfRectangle {
     private int l,b;
     public  int getinput1() {
         return l;
@@ -15,7 +15,7 @@ public class Rectangle {
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Rectangle obj = new Rectangle();
+        AreaOfRectangle obj = new AreaOfRectangle();
         System.out.println("Enter length of the rectangle: ");
         obj.setinput1(scanner.nextInt());
         System.out.println("Enter the breadth of the rectangle: ");
