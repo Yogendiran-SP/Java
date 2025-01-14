@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class AreaOfRectangle {
-    private int l,b;
+    private int l,b,p;
     public  int getinput1() {
         return l;
     }
@@ -13,6 +13,12 @@ public class AreaOfRectangle {
     public void setinput2(int b) {
         this.b=b;
     }
+    public int getcalculatePerimeter() {
+        return 2*(l*b);
+    }
+    public void setcalculatePerimeter() {
+        this.p=2*(l*b);
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         AreaOfRectangle obj = new AreaOfRectangle();
@@ -21,6 +27,7 @@ public class AreaOfRectangle {
         System.out.println("Enter the breadth of the rectangle: ");
         obj.setinput2(scanner.nextInt());
         System.out.println("The Area of the rectangle is "+(obj.getinput1()*obj.getinput2()));
+        System.out.println("Thr Perimeter of the rectangle is "+ obj.getcalculatePerimeter());
         scanner.close();
     }
 }
