@@ -1,15 +1,18 @@
-class Account {
-    private double balance = 500.00;  // member data
-    public double  getBalance(int x) {     // member method
-      int withdrawal = 500;// logic here
-      return balance-withdrawal;
+import java.util.Scanner;
+public class Account {
+  public static void main(String[] args) {
+    float balance =1000,limit=10000,minbalance=100;
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter the amount of withdrawal: ");
+    float amount = scanner.nextFloat();
+    if(amount<balance && (amount<=limit) && (balance-amount)>minbalance) {
+      balance-=amount;
+      System.out.println("Withdrawal has successful");
+      System.out.println("Your balance is "+balance);
     }
-  
-    public static void main(String[] args) {
-      Account accnt = new Account();           // object creation
-      double value = accnt.getBalance(123456);
-      System.out.println(accnt.balance);
-      System.out.println("The balance is: " + value);
+    else {
+      System.out.println("Withdrawal has failed");
     }
+    scanner.close();
   }
-        
+}  
