@@ -21,5 +21,6 @@ public class AreaOfRectangle {
         System.out.println("Enter the breadth of the rectangle: ");
         obj.setinput2(scanner.nextInt());
         System.out.println("The Area of the rectangle is "+(obj.getinput1()*obj.getinput2()));
+        scanner.close();
     }
 }
