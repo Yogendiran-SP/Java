@@ -3,10 +3,6 @@ import java.util.Scanner;
 public class Discount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your bill ID: ");
-        int billid = scanner.nextInt();
-        System.out.println("Enter your customer ID: ");
-        int customerid = scanner.nextInt();
         System.out.println("Enter your bill amount: ");
         int billamt = scanner.nextInt();
         System.out.println("Enter the discount: ");
