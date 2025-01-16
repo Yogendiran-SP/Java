@@ -15,12 +15,7 @@ public class ReverseCalculator {
         System.out.println("i value:"+i);
         System.out.println("m value:"+m);
         while (a>0) {
-            if(a<10) {
-                b=b+a%10;
-            }
-            else {
-                b=b+m*(a%10);
-            }
+            b=b+m*(a%10);
             a=a/10;
             m=m/10;
             System.out.println("Iteration:"+b);
