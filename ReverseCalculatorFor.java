@@ -22,6 +22,6 @@ public class ReverseCalculatorFor {
             m=m/10;
             System.out.println("Iteration:"+b);
         }
-        System.out.println("Last:"+b);
+        System.out.println("The reverse number is:"+b);
     }
 }

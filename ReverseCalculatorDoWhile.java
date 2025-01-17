@@ -21,7 +21,7 @@ public class ReverseCalculatorDoWhile {
             m=m/10;
             System.out.println("Iteration:"+b);
         }while (a>0);
-        System.out.println("Last:"+b);
+        System.out.println("the reverse number is:"+b);
         s.close();
     }
 }
