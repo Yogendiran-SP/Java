@@ -23,13 +23,29 @@ public class ArmstrongNumber_LuckyNumber {
             if(b==copy) {System.out.println(copy+" is an Armstrong number");} else {System.out.println(copy+" is not an Armstrong number");}
         }
         else if(z==2) {
-            System.out.println("Enter a number: ");
+            System.out.print("Enter a number: ");
             int a = scanner.nextInt();
             int copy = a;
+            int s=0;
             String c = Integer.toString(a);
             int i = c.length();
             System.out.println("i value: "+i);
-            int b = 0;
+            int b;
+            for(int j=0;j<i;j++) {
+                System.out.println("Iteration of a: "+a);
+                b = a%10;
+                if(j%2==0) {
+                    s=s+(b*b);
+                    System.out.println("Inside while if of s: "+s+" and b: "+b);
+                }
+                a=a/10;
+            }
+            if(s%9==0) {
+                System.out.println(copy+" is a Lucky Number!");
+            }
+            else {
+                System.out.println("Sorry! "+copy+" is not a Lucky Number!");
+            }
             
         }
         else {
