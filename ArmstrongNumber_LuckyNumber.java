@@ -30,6 +30,7 @@ public class ArmstrongNumber_LuckyNumber {
             int i = c.length();
             System.out.println("i value: "+i);
             int b = 0;
+            
         }
         else {
             System.out.print("Oops! Invalid Choice!");
