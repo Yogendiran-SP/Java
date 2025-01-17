@@ -1,7 +1,8 @@
 import java.util.*;
-public class ReverseCalculator {
+public class ReverseCalculatorWhile {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
+        System.out.print("Enter a number to be reversed: ");
         int a = s.nextInt();
         String c = Integer.toString(a);
         int b = 0, m = 1;
