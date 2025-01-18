@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class MarksUsingMethod {
+public class MarksUsingMethods {
     Scanner scanner = new Scanner(System.in);
     static int[] arr = {0, 1, 2, 3, 4};
     int[] arr1 = new int[5];
@@ -15,7 +15,7 @@ public class MarksUsingMethod {
         }
     }
     public static void main(String[] args) {
-        MarksUsingMethod obj = new MarksUsingMethod();    
+        MarksUsingMethods obj = new MarksUsingMethods();    
         obj.markEntry();
         obj.markDisplay();
     }
