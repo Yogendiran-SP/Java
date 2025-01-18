@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class EmployeeRecord {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the no. of employees salary to be given (upto a max of 100 ata a time): ");
+        System.out.print("Enter the no. of employees salary to be given (upto a max of 100 ata a time): ");
         float n = scanner.nextInt();
         int lavg=0,gavg=0;
         double avg=0;
         double[] a= new double[100];
         for(int i=0;i<n;i++) {
+            System.out.print("Enter the salary of employee "+(i+1)+": ");
             a[i]= scanner.nextDouble();
         }
         for(int i=0;i<n;i++) {
